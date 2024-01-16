@@ -5,7 +5,7 @@
 // Project Name: Autoencoder
 //////////////////////////////////////////////////////////////////////////////////
 
-module mux_3_1 (
+module mux_18_1 (
     
    input [15:0] input_1, 
    input [15:0] input_2,
