@@ -1,17 +1,23 @@
 //////////////////////////////////////////////////////////////////////////////////
 // Engineer    : Achmad novel, Fauzan Ibrahim, Nicholas Teffandi
 // Design Name : Autoencoder
-// Module Name : ReLu_diff
+// Module Name : mux_2_1
 // Project Name: Autoencoder
 //////////////////////////////////////////////////////////////////////////////////
 
-// Input and Output is Unsigned
-
-module ReLu #(
-   parameters NBITS = 16
-) (
-   input wire [NBITS-1:0] val,
-   output reg [NBITS-1:0] result
+module mux_2_1 (
+    
+   input [15:0] input_1, 
+   input [15:0] input_2,
+   input  select,
+   output reg [15:0] out
 );
-   assign result = ~val[NBITS-1] & 0_0000001_00000000;
+
+ always @(*) begin
+case (select)
+    1'b0 : out = input_1;
+    1'b1 : out = input_2;
+endcase
+end
+
 endmodule
