@@ -3,22 +3,41 @@ K3
 13
 cModel Technology
 Z0 dD:\ITB\AutoEncoder_shared_2\AutoEncoder_dumbo\rtl
-vmux_3_1
+vdemux_9_1
 !i10b 1
-!s100 gob7QP=3dgSk;nzzLB8I?0
-IiMeY^Jn[W4_YQM999ngdP3
-VFfJJDORVBLkWZ6JHeik[L3
+!s100 6AjnR_WOgA?alDBol:2HN1
+In0UMV?]5C2hXRaW?I;a^52
+VCPLSOL>BY?fUOnRon:A7]0
 Z1 dD:\ITB\AutoEncoder_shared_2\AutoEncoder_dumbo\rtl
-w1705409777
-8D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl/demux_9_1.v
-FD:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl/demux_9_1.v
+w1705409987
+Z2 8D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl/demux_9_1.v
+Z3 FD:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl/demux_9_1.v
 L0 8
-OV;L;10.1d;51
+Z4 OV;L;10.1d;51
 r1
 !s85 0
 31
-!s108 1705409966.583000
+!s108 1705410019.439000
 !s107 D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl/demux_9_1.v|
-!s90 -reportprogress|300|-work|work|D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl/demux_9_1.v|
+Z5 !s90 -reportprogress|300|-work|work|D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl/demux_9_1.v|
 !s101 -O0
-o-work work -O0
+Z6 o-work work -O0
+vmux_3_1
+Z7 IiMeY^Jn[W4_YQM999ngdP3
+Z8 VFfJJDORVBLkWZ6JHeik[L3
+R1
+Z9 w1705409777
+R2
+R3
+L0 8
+R4
+r1
+31
+R6
+!i10b 1
+Z10 !s100 gob7QP=3dgSk;nzzLB8I?0
+!s85 0
+Z11 !s108 1705409966.583000
+Z12 !s107 D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl/demux_9_1.v|
+R5
+!s101 -O0
