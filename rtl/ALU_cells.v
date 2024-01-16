@@ -9,7 +9,7 @@
 `include "mux_9_1.v"
 `include "mux_2_1.v"
 
-module (
+module ALU_cells(
 //first memory access
    input [15:0] input_mem_1_1, 
    input [15:0] input_mem_1_2,
