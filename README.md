@@ -14,3 +14,4 @@ blok utama
 - ✅Multiplier
 - ✅Adder (ini kalau pakai operator '+' nggak synthesizable)
 
+# test
