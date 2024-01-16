@@ -8,7 +8,6 @@
 `include "mux_18_1.v"
 `include "mux_9_1.v"
 `include "mux_2_1.v"
-`include "demux_9_1.v"
 
 module (
 //first memory access
