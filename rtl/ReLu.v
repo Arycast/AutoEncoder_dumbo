@@ -8,10 +8,15 @@
 // Input and Output is Unsigned
 
 module ReLu #(
-   parameters NBITS = 16
+   parameter NBITS = 16
 ) (
    input wire [NBITS-1:0] val,
-   output reg [NBITS-1:0] result
+   output wire [NBITS-1:0] result
 );
-   assign result = ~val[NBITS-1] & val[NBITS-2:0];
+   // There are 2 options for the result with The first one using conditional
+   // Using conditional effects using more complex hardware
+   // other factors have to be tested later
+   
+   // assign result = (val[NBITS-1] == 1'b1) ? {NBITS{1'b0}} : val;
+   assign result = {NBITS{~val[NBITS-1]}} & val;
 endmodule
