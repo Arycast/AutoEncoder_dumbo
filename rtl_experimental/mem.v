@@ -14,25 +14,36 @@ module mem #(
    input wire                    write_en,
    input wire [ADDR_WIDTH-1:0]   write_addr,
    input wire [DATA_WIDTH-1:0]   write_data,
-   input wire [ADDR_WIDTH-1:0]   read_addr,
-   output wire [DATA_WIDTH-1:0]  read_data
+   input wire [ADDR_WIDTH-1:0]   read_addr_1,
+   input wire [ADDR_WIDTH-1:0]   read_addr_2,
+   output reg  [DATA_WIDTH-1:0]  read_data_1,
+   output reg  [DATA_WIDTH-1:0]  read_data_2
+
 );
 
    /****************************************************************************
     * Signals
     ***************************************************************************/
 
-   reg [DATA_WIDTH-1:0] mem_array [DEPTH-1:0]
+   reg [DATA_WIDTH-1:0] mem_array [DEPTH-1:0];
    
    /****************************************************************************
     * Continuous Assignments
     ***************************************************************************/
 
-   assign read_data = mem_array[read_addr]
-
+   
    /****************************************************************************
     * Synchronous Logic
     ***************************************************************************/
+
+   always @(negedge clk) begin
+
+       read_data_1 <= mem_array[read_addr_1];
+       read_data_2 <= mem_array[read_addr_2];
+
+
+   end
+
 
    always @(posedge clk) begin
 
