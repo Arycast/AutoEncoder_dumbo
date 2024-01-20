@@ -18,7 +18,7 @@ entity mux_16_1 is
         input_14        : in     vl_logic_vector(15 downto 0);
         input_15        : in     vl_logic_vector(15 downto 0);
         input_16        : in     vl_logic_vector(15 downto 0);
-        \select\        : in     vl_logic_vector(4 downto 0);
+        \select\        : in     vl_logic_vector(3 downto 0);
         \out\           : out    vl_logic_vector(15 downto 0)
     );
 end mux_16_1;
