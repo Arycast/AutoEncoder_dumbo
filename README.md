@@ -6,12 +6,27 @@ description
 
 # Progress
 
-blok utama
-
+Elementary Block
 - ✅ sigmoid 
 - ✅ ReLu
 - ✅ ReLu_diff
-- ✅Multiplier
-- ✅Adder (ini kalau pakai operator '+' nggak synthesizable)
+- ✅ Multiplier
+- ✅ Adder (if the operator is not synthesizable)
+- ✅ Multiplexers
 
-# test
+Sytem Level Block
+- ✅ Memory
+- ✅ Memory Cells
+- ✅ Memory Selector
+- ✅ ALU
+-  CU
+-  Instruction Memory
+
+Top Level Block
+-  Backward Propagation 
+-  Forward Propagation
+-  Top Level
+
+Misc
+-  Instruction lists for Autoencoder
+-  System architecture drawing
