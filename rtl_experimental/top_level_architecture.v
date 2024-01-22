@@ -47,7 +47,7 @@ wire [4:0] counter_input;
 //declaring module
 ALU ALU_0 (mem_to_ALU_operand_1,mem_to_ALU_operand_2,enable_ALU,op_select,ALU_result);
 counter_mem counter_mem_0(counter_input,counter,clock);
-CLA CLA_COUNTER (16'd1,counter,counter_in);
+CLA CLA_COUNTER (16'd1,counter,1'b0,counter_input);
 demux_1_4 demux_2 (demux_to_mem,demux_to_sigmoid,demux_to_ReLu,demux_to_ReLu_diff,dest_control,ALU_result);
 ReLu ReLu_0 (demux_to_ReLu,demux_to_mem);
 sigmoid_diff_lut sigmoid_diff_lut_0 (demux_to_Sigmoid_diff,demux_to_mem);

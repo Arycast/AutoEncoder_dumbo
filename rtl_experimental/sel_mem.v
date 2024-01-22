@@ -12,6 +12,8 @@ module sel_mem (
    output reg [3:0]  data_out
 );
 
+initial data_out = 4'd0;
+
    always @ (posedge clk) begin
       if (en)
          data_out <= data_in;

@@ -10,7 +10,7 @@ module counter_mem (
    output reg [4:0]  data_out,
    input wire        clk
 );
-
+initial data_out = 4'd0;
    always @ (posedge clk) begin
         data_out <= data_in;
    end
