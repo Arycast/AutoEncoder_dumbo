@@ -8,7 +8,7 @@ entity Instrcut_mem is
     );
     port(
         clk             : in     vl_logic;
-        counter         : in     vl_logic_vector(4 downto 0);
+        counter         : in     vl_logic_vector(15 downto 0);
         instructCode    : out    vl_logic_vector
     );
     attribute mti_svvh_generic_type : integer;

@@ -11,7 +11,7 @@ module Instrcut_mem #(
    parameter DEPTH      = 32
 ) (
    input wire                    clk,
-   input wire  [5-1:0]           counter,
+   input wire  [15:0]           counter,
    output reg  [DATA_WIDTH-1:0]  instructCode
 );
 
