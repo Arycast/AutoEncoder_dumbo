@@ -38,17 +38,17 @@ wire [3:0] sector_selector_write;
 //control
 wire [1:0] dest_control; //set destination from ALU result (demux 2)
 wire  enable_ALU;
-wire op_select;
+wire [1:0]op_select;
 wire write_enable_mem;
 wire enable_sel_mem;
 wire [4:0] counter;
-wire [4:0] counter_input;
+wire [15:0] counter_input;
 
 //declaring module
 ALU ALU_0 (mem_to_ALU_operand_1,mem_to_ALU_operand_2,enable_ALU,op_select,ALU_result);
 counter_mem counter_mem_0(counter_input,counter,clock);
-CLA CLA_COUNTER (16'd1,counter,1'b0,counter_input);
-demux_1_4 demux_2 (demux_to_mem,demux_to_sigmoid,demux_to_ReLu,demux_to_ReLu_diff,dest_control,ALU_result);
+CLA CLA_COUNTER (16'd1,{11'd0,counter},1'b0,counter_input);
+demux_1_4 demux_2 (demux_to_mem,demux_to_sigmoid,demux_to_ReLu,demux_to_Sigmoid_diff,dest_control,ALU_result);
 ReLu ReLu_0 (demux_to_ReLu,demux_to_mem);
 sigmoid_diff_lut sigmoid_diff_lut_0 (demux_to_Sigmoid_diff,demux_to_mem);
 sigmoid_lut sigmoid_lut_0 (demux_to_sigmoid,demux_to_mem);
@@ -56,7 +56,7 @@ sel_mem selector_read_1(clock,enable_sel_mem,instruction[11:8],sector_selector_r
 sel_mem selector_read_2(clock,enable_sel_mem,instruction[7:4],sector_selector_read_2);
 sel_mem selector_write(clock,enable_sel_mem,instruction[3:0],sector_selector_write);
 top_level_memory mem_0 (demux_to_mem,sector_selector_write,instruction[3:0],clock,write_enable_mem,instruction[11:8],instruction[7:4],sector_selector_read_1,sector_selector_read_2,mem_to_ALU_operand_1,mem_to_ALU_operand_2);
-CU CU_0 (instruction[15:12],write_enable_mem,enable_ALU,dest_control,op_select);
+CU CU_0 (instruction[15:12],write_enable_mem,enable_ALU,enable_sel_mem,dest_control,op_select);
 Instrcut_mem instruction_0 (clock,counter,instruction); 
 
 endmodule
