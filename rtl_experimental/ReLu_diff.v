@@ -7,7 +7,7 @@
 
 // Input and Output is Unsigned
 
-module ReLu #(
+module ReLu_diff #(
    parameter NBITS = 16
 ) (
    input wire [NBITS-1:0] val,

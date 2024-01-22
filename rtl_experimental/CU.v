@@ -11,6 +11,7 @@ module CU #(
     input wire [OP_WIDTH-1:0] opcode,
     output wire                 en_writeMem,
     output wire                 en_alu,
+    output wire [1:0]           dest_control,
     output wire [1:0]           op_sel
 
 );
