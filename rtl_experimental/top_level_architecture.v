@@ -5,11 +5,6 @@
 // Project Name: Autoencoder
 //////////////////////////////////////////////////////////////////////////////////
 
-module top_level_architecture(
-input clock
-
-);
-
 //including all component
 `include "top_level_memory.v"
 `include "ALU.v"
@@ -21,6 +16,11 @@ input clock
 `include "sel_mem.v"
 `include "Instrcut_mem.v"
 `include "counter_mem.v"
+
+module top_level_architecture(
+input clock
+
+);
 
 //internal signal
 wire [15:0] mem_to_ALU_operand_1;
