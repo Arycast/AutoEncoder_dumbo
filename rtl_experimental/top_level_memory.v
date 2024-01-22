@@ -35,7 +35,7 @@ mux_16_1 mux_2(read_data_2_temp[0],read_data_2_temp[1],read_data_2_temp[2],read_
 //auto generate 16 memory sector
 genvar i;
 generate
-    for (i=0; i<=16; i=i+1) begin : generate_block_identifier // <-- example block name
+    for (i=0; i<=16; i=i+1) begin : memory // <-- example block name
     mem memory_block (
       clock,
       write_enable,
