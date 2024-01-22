@@ -7,7 +7,7 @@
 
 // Input and Output is Unsigned
 
-module sigmoid_lut_diff (
+module sigmoid_diff_lut (
    input wire [15:0] addr,
    output reg [15:0] result
 );

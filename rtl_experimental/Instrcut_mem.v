@@ -1,11 +1,11 @@
 //////////////////////////////////////////////////////////////////////////////////
 // Engineer    : Achmad novel, Fauzan Ibrahim, Nicholas Teffandi
 // Design Name : Autoencoder
-// Module Name : instructMem
+// Module Name : Instrcut_mem
 // Project Name: Autoencoder
 //////////////////////////////////////////////////////////////////////////////////
 
-module instuctMem #(
+module Instrcut_mem #(
    parameter ADDR_WIDTH = 4,
    parameter DATA_WIDTH = 16,
    parameter DEPTH      = 32
