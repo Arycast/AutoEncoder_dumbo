@@ -15,6 +15,11 @@ module demux_1_4 (
    input [15:0] in
 );
 
+initial output_1 = 16'd0;
+initial output_2 = 16'd0;
+initial output_3 = 16'd0;
+initial output_4 = 16'd0;
+
  always @(*) begin
 case (select)
     2'b00 : output_1 = in;

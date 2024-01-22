@@ -8,7 +8,7 @@
 //including all component
 `include "top_level_memory.v"
 `include "ALU.v"
-`include "demux_1_4.v"
+`include "mux_4_1.v"
 `include "CU.v"
 `include "ReLu.v"
 `include "sigmoid_lut.v"
@@ -26,10 +26,10 @@ input clock
 wire [15:0] mem_to_ALU_operand_1;
 wire [15:0] mem_to_ALU_operand_2;
 wire [15:0] ALU_result;
-wire [15:0] demux_to_mem;
-wire [15:0] demux_to_ReLu;
-wire [15:0] demux_to_Sigmoid_diff;
-wire [15:0] demux_to_sigmoid;
+wire [15:0] mux_to_mem;
+wire [15:0] ReLu_to_mux;
+wire [15:0] sigmoid_diff_to_mux;
+wire [15:0] sigmoid_to_mux;
 wire [15:0] instruction; // 16 bit (op code)(field 1)(field 2)(field 3), each field contain 4 bit
 wire [3:0] sector_selector_read_1;
 wire [3:0] sector_selector_read_2;
@@ -48,14 +48,15 @@ wire [15:0] counter_input;
 ALU ALU_0 (mem_to_ALU_operand_1,mem_to_ALU_operand_2,enable_ALU,op_select,ALU_result);
 counter_mem counter_mem_0(counter_input,counter,clock);
 CLA CLA_COUNTER (16'd1,counter,1'b0,counter_input);
-demux_1_4 demux_2 (demux_to_mem,demux_to_sigmoid,demux_to_ReLu,demux_to_Sigmoid_diff,dest_control,ALU_result);
-ReLu ReLu_0 (demux_to_ReLu,demux_to_mem);
-sigmoid_diff_lut sigmoid_diff_lut_0 (demux_to_Sigmoid_diff,demux_to_mem);
-sigmoid_lut sigmoid_lut_0 (demux_to_sigmoid,demux_to_mem);
+//demux_1_4 demux_2 (demux_to_mem,demux_to_sigmoid,demux_to_ReLu,demux_to_Sigmoid_diff,dest_control,ALU_result);
+mux_4_1 mux_2 (ALU_result,sigmoid_to_mux,ReLu_to_mux,sigmoid_diff_to_mux,dest_control,mux_to_mem);
+ReLu ReLu_0 (ALU_result,ReLu_to_mux);
+sigmoid_diff_lut sigmoid_diff_lut_0 (ALU_result,sigmoid_diff_to_mux);
+sigmoid_lut sigmoid_lut_0 (ALU_result,sigmoid_to_mux);
 sel_mem selector_read_1(clock,enable_sel_mem,instruction[11:8],sector_selector_read_1);
 sel_mem selector_read_2(clock,enable_sel_mem,instruction[7:4],sector_selector_read_2);
 sel_mem selector_write(clock,enable_sel_mem,instruction[3:0],sector_selector_write);
-top_level_memory mem_0 (demux_to_mem,sector_selector_write,instruction[3:0],clock,write_enable_mem,instruction[11:8],instruction[7:4],sector_selector_read_1,sector_selector_read_2,mem_to_ALU_operand_1,mem_to_ALU_operand_2);
+top_level_memory mem_0 (mux_to_mem,sector_selector_write,instruction[3:0],clock,write_enable_mem,instruction[11:8],instruction[7:4],sector_selector_read_1,sector_selector_read_2,mem_to_ALU_operand_1,mem_to_ALU_operand_2);
 CU CU_0 (instruction[15:12],write_enable_mem,enable_ALU,enable_sel_mem,dest_control,op_select);
 Instrcut_mem instruction_0 (clock,counter,instruction); 
 

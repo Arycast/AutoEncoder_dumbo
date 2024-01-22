@@ -17,7 +17,7 @@ Z6 OV;L;10.1d;51
 r1
 !s85 0
 31
-Z7 !s108 1705925635.678000
+Z7 !s108 1705928031.433000
 Z8 !s107 mux_2_1.v|mult.v|four_bit_adder.v|CLA.v|D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/ALU.v|
 Z9 !s90 -reportprogress|300|-work|work|-O0|D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/ALU.v|
 !s101 -O0
@@ -57,7 +57,7 @@ r1
 31
 R10
 Z19 !s100 8d2Ah^lmX;Ec=g>G:]JgW1
-Z20 !s108 1705925635.305000
+Z20 !s108 1705928031.058000
 Z21 !s107 D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/counter_mem.v|
 Z22 !s90 -reportprogress|300|-work|work|-O0|D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/counter_mem.v|
 !i10b 1
@@ -77,7 +77,7 @@ r1
 R10
 n@c@u
 Z28 !s100 P4BMVc3l1@:Y<L^3ZFSI91
-Z29 !s108 1705925635.129000
+Z29 !s108 1705928030.891000
 Z30 !s107 D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/CU.v|
 Z31 !s90 -reportprogress|300|-work|work|-O0|D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/CU.v|
 !i10b 1
@@ -96,28 +96,28 @@ r1
 31
 R10
 Z37 !s100 CJH1KYN]L1d8fASn70`5J1
-Z38 !s108 1705925634.787000
+Z38 !s108 1705928030.548000
 Z39 !s107 D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/demux_1_16.v|
 Z40 !s90 -reportprogress|300|-work|work|-O0|D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/demux_1_16.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vdemux_1_4
-Z41 Io;3T^LO1@aa86[Wfb0cOY0
-Z42 Vn4b`nmbka=5`E]AKQ0E531
+Z41 !s100 ZiNNd5B;:[g>kW6=E:OR>2
+Z42 Im^DI9THF7^_l9H4g`^:[a0
+Z43 Vn4b`nmbka=5`E]AKQ0E531
 R2
-Z43 w1705765441
-Z44 8D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/demux_1_4.v
-Z45 FD:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/demux_1_4.v
+Z44 w1705926411
+Z45 8D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/demux_1_4.v
+Z46 FD:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/demux_1_4.v
 L0 8
 R6
 r1
 31
+Z47 !s90 -reportprogress|300|-work|work|-O0|D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/demux_1_4.v|
 R10
-Z46 !s100 L9TG2gm<YQ>8?FFAW]>Tk2
-Z47 !s108 1705925634.965000
-Z48 !s107 D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/demux_1_4.v|
-Z49 !s90 -reportprogress|300|-work|work|-O0|D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/demux_1_4.v|
+Z48 !s108 1705928030.718000
+Z49 !s107 D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/demux_1_4.v|
 !i10b 1
 !s85 0
 !s101 -O0
@@ -155,7 +155,7 @@ r1
 R10
 Z59 n@instrcut_mem
 Z60 !s100 JE6HT746Of]m2E8GNc]L]0
-Z61 !s108 1705925634.420000
+Z61 !s108 1705928030.203000
 Z62 !s107 D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/Instrcut_mem.v|
 Z63 !s90 -reportprogress|300|-work|work|-O0|D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/Instrcut_mem.v|
 !i10b 1
@@ -174,7 +174,7 @@ r1
 31
 R10
 Z69 !s100 n0^1K=fS3UnieN1oE^MZ62
-Z70 !s108 1705925634.236000
+Z70 !s108 1705928030.027000
 Z71 !s107 D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/mem.v|
 Z72 !s90 -reportprogress|300|-work|work|-O0|D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/mem.v|
 !i10b 1
@@ -213,7 +213,7 @@ r1
 31
 R10
 Z79 !s100 >Y1ZPEI:Rh9F>4CP9IhG<3
-Z80 !s108 1705925633.730000
+Z80 !s108 1705928029.307000
 Z81 !s107 D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/mux_16_1.v|
 Z82 !s90 -reportprogress|300|-work|work|-O0|D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/mux_16_1.v|
 !i10b 1
@@ -239,158 +239,177 @@ R8
 R9
 !s101 -O0
 R10
-vReLu
-Z84 I?X?D6Hm[L8J5K3`4aFZRH2
-Z85 VAN1WaT>HV<2FdBP><6U6i3
+vmux_4_1
+Z84 IW1Y@TD`C79Sad`GZ>1[BL1
+Z85 VzANB2L=IPC38P>n^D<<oW2
 R2
-Z86 w1705728565
-Z87 8D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/ReLu.v
-Z88 FD:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/ReLu.v
+Z86 w1705926883
+Z87 8D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/mux_4_1.v
+Z88 FD:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/mux_4_1.v
+L0 8
+R6
+r1
+31
+R10
+Z89 !s100 UeHReFRzHTC1D4?Hg0:ji2
+Z90 !s108 1705928029.476000
+Z91 !s107 D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/mux_4_1.v|
+Z92 !s90 -reportprogress|300|-work|work|-O0|D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/mux_4_1.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vReLu
+Z93 I?X?D6Hm[L8J5K3`4aFZRH2
+Z94 VAN1WaT>HV<2FdBP><6U6i3
+R2
+Z95 w1705728565
+Z96 8D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/ReLu.v
+Z97 FD:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/ReLu.v
 L0 10
 R6
 r1
 31
 R10
-Z89 n@re@lu
-Z90 !s100 O4@RZ8jag6gXM?ZAjR6HA0
-Z91 !s108 1705925633.557000
-Z92 !s107 D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/ReLu.v|
-Z93 !s90 -reportprogress|300|-work|work|-O0|D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/ReLu.v|
+Z98 n@re@lu
+Z99 !s100 O4@RZ8jag6gXM?ZAjR6HA0
+Z100 !s108 1705928029.107000
+Z101 !s107 D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/ReLu.v|
+Z102 !s90 -reportprogress|300|-work|work|-O0|D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/ReLu.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vReLu_diff
-Z94 !s100 M4U8b19gEh?zYL=WTFFgj1
-Z95 IKGl7eUEWI8eAGkOW2jlG20
-Z96 VZOPg^bGRR]O]HenAc0lm32
+Z103 !s100 M4U8b19gEh?zYL=WTFFgj1
+Z104 IKGl7eUEWI8eAGkOW2jlG20
+Z105 VZOPg^bGRR]O]HenAc0lm32
 R2
-Z97 w1705894734
-Z98 8D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/ReLu_diff.v
-Z99 FD:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/ReLu_diff.v
+Z106 w1705894734
+Z107 8D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/ReLu_diff.v
+Z108 FD:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/ReLu_diff.v
 L0 10
 R6
 r1
 31
-Z100 !s90 -reportprogress|300|-work|work|-O0|D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/ReLu_diff.v|
+Z109 !s90 -reportprogress|300|-work|work|-O0|D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/ReLu_diff.v|
 R10
-Z101 n@re@lu_diff
-Z102 !s108 1705925633.382000
-Z103 !s107 D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/ReLu_diff.v|
+Z110 n@re@lu_diff
+Z111 !s108 1705928028.911000
+Z112 !s107 D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/ReLu_diff.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vrom
-Z104 I=_flEbCA0mSc6kz=WXEKK2
-Z105 V`EN=BAa?8ii7:fb9U;B:02
+Z113 I=_flEbCA0mSc6kz=WXEKK2
+Z114 V`EN=BAa?8ii7:fb9U;B:02
 R2
-Z106 w1705906560
-Z107 8D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/rom.v
-Z108 FD:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/rom.v
+Z115 w1705906560
+Z116 8D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/rom.v
+Z117 FD:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/rom.v
 L0 8
 R6
 r1
 31
 R10
-Z109 !s100 0Aem1fD?mRH37N9=9D9lN0
-Z110 !s108 1705925633.219000
-Z111 !s107 D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/rom.v|
-Z112 !s90 -reportprogress|300|-work|work|-O0|D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/rom.v|
+Z118 !s100 0Aem1fD?mRH37N9=9D9lN0
+Z119 !s108 1705928028.741000
+Z120 !s107 D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/rom.v|
+Z121 !s90 -reportprogress|300|-work|work|-O0|D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/rom.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vsel_mem
-Z113 IW1[=ogL=X9h7_2JP2igfV0
-Z114 V;ie=>bClH5?I5Ye]T5fnz1
+Z122 IW1[=ogL=X9h7_2JP2igfV0
+Z123 V;ie=>bClH5?I5Ye]T5fnz1
 R2
-Z115 w1705923225
-Z116 8D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/sel_mem.v
-Z117 FD:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/sel_mem.v
+Z124 w1705923225
+Z125 8D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/sel_mem.v
+Z126 FD:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/sel_mem.v
 L0 8
 R6
 r1
 31
 R10
-Z118 !s100 X66gHkEWQ=VT`of52_]i62
-Z119 !s108 1705925633.042000
-Z120 !s107 D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/sel_mem.v|
-Z121 !s90 -reportprogress|300|-work|work|-O0|D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/sel_mem.v|
+Z127 !s100 X66gHkEWQ=VT`of52_]i62
+Z128 !s108 1705928028.572000
+Z129 !s107 D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/sel_mem.v|
+Z130 !s90 -reportprogress|300|-work|work|-O0|D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/sel_mem.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vsigmoid_diff_lut
-Z122 I^g1^TAKh>>C[^6i:T]nWA3
-Z123 V@c@5VKMdk9o1K6;GDWBVf0
+Z131 I^g1^TAKh>>C[^6i:T]nWA3
+Z132 V@c@5VKMdk9o1K6;GDWBVf0
 R2
-Z124 w1705922155
-Z125 8D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/sigmoid_diff_lut.v
-Z126 FD:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/sigmoid_diff_lut.v
+Z133 w1705922155
+Z134 8D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/sigmoid_diff_lut.v
+Z135 FD:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/sigmoid_diff_lut.v
 L0 10
 R6
 r1
 31
 R10
-Z127 !s100 52K25ngPP9G7]I]dm@9303
-Z128 !s108 1705925632.786000
-Z129 !s107 D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/sigmoid_diff_lut.v|
-Z130 !s90 -reportprogress|300|-work|work|-O0|D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/sigmoid_diff_lut.v|
+Z136 !s100 52K25ngPP9G7]I]dm@9303
+Z137 !s108 1705928028.304000
+Z138 !s107 D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/sigmoid_diff_lut.v|
+Z139 !s90 -reportprogress|300|-work|work|-O0|D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/sigmoid_diff_lut.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vsigmoid_lut
-Z131 IBi4<I65nb>KX_4`F:=`692
-Z132 Vb0VkTQbQUEUQheVA`51AZ3
+Z140 IBi4<I65nb>KX_4`F:=`692
+Z141 Vb0VkTQbQUEUQheVA`51AZ3
 R2
-Z133 w1705905610
-Z134 8D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/sigmoid_lut.v
-Z135 FD:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/sigmoid_lut.v
+Z142 w1705905610
+Z143 8D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/sigmoid_lut.v
+Z144 FD:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/sigmoid_lut.v
 L0 10
 R6
 r1
 31
 R10
-Z136 !s100 ^g84@Q7TiOl:DAY<HQ=O_0
-Z137 !s108 1705925632.558000
-Z138 !s107 D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/sigmoid_lut.v|
-Z139 !s90 -reportprogress|300|-work|work|-O0|D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/sigmoid_lut.v|
+Z145 !s100 ^g84@Q7TiOl:DAY<HQ=O_0
+Z146 !s108 1705928028.062000
+Z147 !s107 D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/sigmoid_lut.v|
+Z148 !s90 -reportprogress|300|-work|work|-O0|D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/sigmoid_lut.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vtop_level_architecture
-Z140 !s100 S4:UD]gVz3VD6oLP3kF]42
-Z141 Izl0V=F:0coi:=c=aAT>[A1
-Z142 V=FR`_TO=AgLNN@2IcGId<3
+Z149 !s100 88i=T8iT7d:2nCU]>MGE@1
+Z150 I[FSRh[4]V[B<feQFE;V2H3
+Z151 V=FR`_TO=AgLNN@2IcGId<3
 R2
-Z143 w1705925563
-Z144 8D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/top_level_architecture.v
-Z145 FD:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/top_level_architecture.v
+Z152 w1705927317
+Z153 8D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/top_level_architecture.v
+Z154 FD:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/top_level_architecture.v
 L0 20
 R6
 r1
 31
-Z146 !s108 1705925631.892000
-Z147 !s107 counter_mem.v|Instrcut_mem.v|sel_mem.v|sigmoid_diff_lut.v|sigmoid_lut.v|ReLu.v|CU.v|demux_1_4.v|mux_2_1.v|mult.v|four_bit_adder.v|CLA.v|ALU.v|rom.v|demux_1_16.v|mux_16_1.v|mem.v|top_level_memory.v|D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/top_level_architecture.v|
-Z148 !s90 -reportprogress|300|-work|work|-O0|D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/top_level_architecture.v|
+Z155 !s108 1705928027.396000
+Z156 !s107 counter_mem.v|Instrcut_mem.v|sel_mem.v|sigmoid_diff_lut.v|sigmoid_lut.v|ReLu.v|CU.v|mux_4_1.v|mux_2_1.v|mult.v|four_bit_adder.v|CLA.v|ALU.v|rom.v|demux_1_16.v|mux_16_1.v|mem.v|top_level_memory.v|D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/top_level_architecture.v|
+Z157 !s90 -reportprogress|300|-work|work|-O0|D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/top_level_architecture.v|
 R10
 !i10b 1
 !s85 0
 !s101 -O0
 vtop_level_memory
-Z149 IolJ7egOk_?=`:A1[PdTRE3
-Z150 VcPnIc1PZj[nkiegnKQW092
+Z158 IfVZcoH2JeSW@Dogjid:k<0
+Z159 VcPnIc1PZj[nkiegnKQW092
 R2
-R143
-Z151 Ftop_level_memory.v
-R144
-R145
+Z160 w1705927993
+Z161 Ftop_level_memory.v
+R153
+R154
 L0 13
 R6
 r1
 31
-R146
-R147
-R148
+R155
+R156
+R157
 R10
-Z152 !s100 o@U]=J0N7?27W<db16Dz<3
+Z162 !s100 BMo3XilbbLJ]eeaA7N@N]1
 !i10b 1
 !s85 0
 !s101 -O0

@@ -37,7 +37,7 @@ rom rom_0(clock,1'b0,4'b0000,16'd0,read_add_1,read_add_2,read_data_1_temp[15],re
 //auto generate 16 memory sector
 genvar i;
 generate
-    for (i=0; i<=15; i=i+1) begin : memory // <-- example block name
+    for (i=0; i<=14; i=i+1) begin : memory // <-- example block name
     mem memory_block (
       clock,
       write_enable,
