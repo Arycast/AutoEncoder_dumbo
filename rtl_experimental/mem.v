@@ -28,9 +28,12 @@ module mem #(
    reg [DATA_WIDTH-1:0] mem_array [DEPTH-1:0];
    
    /****************************************************************************
-    * Continuous Assignments
+    * initialization
     ***************************************************************************/
+initial begin
 
+    $readmemh("RAM.txt", mem_array);
+end
    
    /****************************************************************************
     * Synchronous Logic
