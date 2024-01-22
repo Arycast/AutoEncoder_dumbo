@@ -19,6 +19,8 @@ input clock
 `include "sigmoid_lut.v"
 `include "ReLu_diff.v"
 `include "sel_mem.v"
+`include "CU.v"
+
 
 //internal signal
 wire [15:0] mem_to_ALU_operand_1;
@@ -50,7 +52,7 @@ sel_mem sector_selector_read_1(clock,enable_sel_mem,instruction[11:8],sector_sel
 sel_mem sector_selector_read_2(clock,enable_sel_mem,instruction[7:4],sector_selector_read_2);
 sel_mem sector_selector_write(clock,enable_sel_mem,instruction[3:0],sector_selector_write);
 top_level_architecture mem_0 (demux_to_mem,sector_selector_write,instruction[3:0],clock,write_enable_mem,instruction[11:8],instruction[7:4],sector_selector_read_1,sector_selector_read_2,mem_to_ALU_operand_1,mem_to_ALU_operand_2);
-
+CU CU_0 (instruction[3:0],write_enable_mem,enable_ALU,dest_control,op_select);
 
 
 endmodule
