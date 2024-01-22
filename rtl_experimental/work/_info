@@ -23,60 +23,79 @@ Z12 !s90 -reportprogress|300|-work|work|D:/ITB/AutoEncoder_shared_2/AutoEncoder_
 !s85 0
 !s101 -O0
 vmem
-!i10b 1
-!s100 DU`Xj>D3:EP`^@aFY5zMZ2
-IAV;lj@L07DiRABBJ3P?O32
-Z13 V]K^JB82ib[4Pcf<o@ONg41
+Z13 !s100 DU`Xj>D3:EP`^@aFY5zMZ2
+Z14 IAV;lj@L07DiRABBJ3P?O32
+Z15 V]K^JB82ib[4Pcf<o@ONg41
 R3
-w1705750472
-Fmem.v
-Z14 8D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/top_level_memory.v
-Z15 FD:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/top_level_memory.v
+Z16 w1705906246
+Z17 Fmem.v
+Z18 8D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/top_level_memory.v
+Z19 FD:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/top_level_memory.v
 L0 8
 R7
 r1
-!s85 0
 31
-Z16 !s108 1705750538.996000
-Z17 !s107 demux_1_16.v|mem.v|D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/top_level_memory.v|
-Z18 !s90 -reportprogress|300|-work|work|D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/top_level_memory.v|
-!s101 -O0
+Z20 !s90 -reportprogress|300|-work|work|D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/top_level_memory.v|
 R8
+!i10b 1
+!s85 0
+Z21 !s108 1705906439.087000
+Z22 !s107 rom.v|demux_1_16.v|mem.v|D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/top_level_memory.v|
+!s101 -O0
 vmux_16_1
-Z19 IJ402;zQNNUF[2YV:JEg?=2
-Z20 VLiTSDT9i4Ce4AL:gdn<ao0
+Z23 IJ402;zQNNUF[2YV:JEg?=2
+Z24 VLiTSDT9i4Ce4AL:gdn<ao0
 R3
-Z21 w1705748200
-Z22 8D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/mux_16_1.v
-Z23 FD:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/mux_16_1.v
+Z25 w1705748200
+Z26 8D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/mux_16_1.v
+Z27 FD:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/mux_16_1.v
 L0 8
 R7
 r1
 31
-Z24 !s90 -reportprogress|300|-work|work|D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/mux_16_1.v|
+Z28 !s90 -reportprogress|300|-work|work|D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/mux_16_1.v|
 R8
+Z29 !s100 >Y1ZPEI:Rh9F>4CP9IhG<3
+Z30 !s108 1705750538.933000
+Z31 !s107 D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/mux_16_1.v|
 !i10b 1
-Z25 !s100 >Y1ZPEI:Rh9F>4CP9IhG<3
 !s85 0
-Z26 !s108 1705750538.933000
-Z27 !s107 D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/mux_16_1.v|
 !s101 -O0
-vtop_level_memory
+vrom
 !i10b 1
-Z28 !s100 IRUV0S^B5IzC^9UIcn60e1
-Z29 If:CNod11g2EOM^01Sz<N=1
-Z30 VcPnIc1PZj[nkiegnKQW092
+!s100 0Aem1fD?mRH37N9=9D9lN0
+I=_flEbCA0mSc6kz=WXEKK2
+V`EN=BAa?8ii7:fb9U;B:02
+R3
+w1705906560
+8D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/rom.v
+FD:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/rom.v
+L0 8
+R7
+r1
+!s85 0
+31
+!s108 1705906564.046000
+!s107 D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/rom.v|
+!s90 -reportprogress|300|-work|work|D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/rom.v|
+!s101 -O0
+R8
+vtop_level_memory
+Z32 !s100 IRUV0S^B5IzC^9UIcn60e1
+Z33 If:CNod11g2EOM^01Sz<N=1
+Z34 VcPnIc1PZj[nkiegnKQW092
 R3
 w0
-R14
-R15
+R18
+R19
 L1 12
 R7
 r1
-!s85 0
 31
-R16
-R17
-R18
-!s101 -O0
+Z35 !s108 1705750538.996000
+Z36 !s107 demux_1_16.v|mem.v|D:/ITB/AutoEncoder_shared_2/AutoEncoder_dumbo/rtl_experimental/top_level_memory.v|
+R20
 R8
+!i10b 1
+!s85 0
+!s101 -O0
