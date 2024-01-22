@@ -20,7 +20,6 @@ input clock
 `include "sigmoid_diff_lut.v"
 `include "sel_mem.v"
 `include "instrcut_mem.v"
-`include "CLA.v"
 `include "counter_mem.v"
 
 //internal signal
@@ -53,9 +52,9 @@ demux_1_4 demux_2 (demux_to_mem,demux_to_sigmoid,demux_to_ReLu,demux_to_ReLu_dif
 ReLu ReLu_0 (demux_to_ReLu,demux_to_mem);
 sigmoid_diff_lut sigmoid_diff_lut_0 (demux_to_Sigmoid_diff,demux_to_mem);
 sigmoid_lut sigmoid_lut_0 (demux_to_sigmoid,demux_to_mem);
-sel_mem sector_selector_read_1(clock,enable_sel_mem,instruction[11:8],sector_selector_read_1);
-sel_mem sector_selector_read_2(clock,enable_sel_mem,instruction[7:4],sector_selector_read_2);
-sel_mem sector_selector_write(clock,enable_sel_mem,instruction[3:0],sector_selector_write);
+sel_mem selector_read_1(clock,enable_sel_mem,instruction[11:8],sector_selector_read_1);
+sel_mem selector_read_2(clock,enable_sel_mem,instruction[7:4],sector_selector_read_2);
+sel_mem selector_write(clock,enable_sel_mem,instruction[3:0],sector_selector_write);
 top_level_memory mem_0 (demux_to_mem,sector_selector_write,instruction[3:0],clock,write_enable_mem,instruction[11:8],instruction[7:4],sector_selector_read_1,sector_selector_read_2,mem_to_ALU_operand_1,mem_to_ALU_operand_2);
 CU CU_0 (instruction[15:12],write_enable_mem,enable_ALU,dest_control,op_select);
 instrcut_mem instruction_0 (clock,counter,instruction); 
