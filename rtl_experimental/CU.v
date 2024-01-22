@@ -6,14 +6,14 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module CU #(
-    parameter OP_WIDTH =4,
+    parameter OP_WIDTH =4
 )(
     input wire [OP_WIDTH-1:0] opcode,
-    output wire                 en_writeMem,
-    output wire                 en_alu,
-    output wire                 en_selMem,
-    output wire [1:0]           dest_control,
-    output wire [1:0]           op_sel
+    output reg                 en_writeMem,
+    output reg                 en_alu,
+    output reg                 en_selMem,
+    output reg [1:0]           dest_control,
+    output reg [1:0]           op_sel
 
 );
 
