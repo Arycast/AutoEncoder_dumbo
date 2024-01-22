@@ -24,7 +24,7 @@ module CU #(
                 en_alu = 1;
                 op_sel = 2'b00 ;
 
-                en_writeMem = 0;
+                en_writeMem = 1;
                 en_selMem = 0;
                 dest_control = 2'b00;
 
@@ -33,7 +33,7 @@ module CU #(
                 en_alu = 1;
                 op_sel = 2'b01 ;
                 
-                en_writeMem = 0;
+                en_writeMem = 1;
                 en_selMem = 0;
                 dest_control = 2'b00;
             end
@@ -41,7 +41,7 @@ module CU #(
                 en_alu = 1;
                 op_sel = 2'b10 ;
                 
-                en_writeMem = 0;
+                en_writeMem = 1;
                 en_selMem = 0;
                 dest_control = 2'b00;
             end
@@ -68,7 +68,7 @@ module CU #(
                 dest_control = 2'b01;
 
                 en_selMem = 0;
-                en_writeMem=0;
+                en_writeMem=1;
                 en_alu = 0;
                 op_sel = 2'b00 ;
             end
@@ -77,7 +77,7 @@ module CU #(
                 dest_control = 2'b10;
 
                 en_selMem = 0;
-                en_writeMem=0;
+                en_writeMem=1;
                 en_alu = 0;
                 op_sel = 2'b00 ;
             end
@@ -86,18 +86,14 @@ module CU #(
                 dest_control = 2'b11;
 
                 en_selMem = 0;
-                en_writeMem=0;
+                en_writeMem=1;
                 en_alu = 0;
                 op_sel = 2'b00 ;
             end
 
             // NOP
             4'b1111 : begin
-                dest_control = 2'b00;
-                en_selMem = 0;
-                en_writeMem=0;
-                en_alu = 0;
-                op_sel = 2'b00 ;
+                
             end
             
         endcase
