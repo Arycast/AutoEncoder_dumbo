@@ -16,6 +16,7 @@
 `include "sel_mem.v"
 `include "Instrcut_mem.v"
 `include "counter_mem.v"
+`include "mux_2_1.v"
 
 module top_level_architecture(
 input clock
@@ -24,7 +25,8 @@ input clock
 
 //internal signal
 wire [15:0] mem_to_ALU_operand_1;
-wire [15:0] mem_to_ALU_operand_2;
+wire [15:0] mem_to_operand2;
+wire [15:0] operand2;
 wire [15:0] ALU_result;
 wire [15:0] mux_to_mem;
 wire [15:0] ReLu_to_mux;
@@ -43,13 +45,15 @@ wire write_enable_mem;
 wire enable_sel_mem;
 wire [15:0] counter;
 wire [15:0] counter_input;
+wire operand2_sel;
 
 //declaring module
-ALU ALU_0 (mem_to_ALU_operand_1,mem_to_ALU_operand_2,enable_ALU,op_select,ALU_result);
+ALU ALU_0 (mem_to_ALU_operand_1,operand2,enable_ALU,op_select,ALU_result);
 counter_mem counter_mem_0(counter_input,counter,clock);
 CLA CLA_COUNTER (16'd1,counter,1'b0,counter_input);
 //demux_1_4 demux_2 (demux_to_mem,demux_to_sigmoid,demux_to_ReLu,demux_to_Sigmoid_diff,dest_control,ALU_result);
 mux_4_1 mux_2 (ALU_result,sigmoid_to_mux,ReLu_to_mux,sigmoid_diff_to_mux,dest_control,mux_to_mem);
+mux_2_1 operand2_ALU (mem_to_operand2, 16'd0, operand2_sel, )
 ReLu ReLu_0 (ALU_result,ReLu_to_mux);
 sigmoid_diff_lut sigmoid_diff_lut_0 (ALU_result,sigmoid_diff_to_mux);
 sigmoid_lut sigmoid_lut_0 (ALU_result,sigmoid_to_mux);
