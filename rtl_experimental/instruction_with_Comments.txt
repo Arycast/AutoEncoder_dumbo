@@ -1,3 +1,4 @@
+//Forward_propagation
 //encoded 1
 4F23 //w*x
 2000
@@ -105,3 +106,19 @@
 5666
 5777
 5888
+
+//backward_Propagation
+//error output
+42F0
+1000
+1111
+1222
+1333
+1444
+1555
+1666
+1777
+1888
+
+//differential error output
+
