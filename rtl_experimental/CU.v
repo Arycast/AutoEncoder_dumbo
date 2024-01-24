@@ -13,7 +13,8 @@ module CU #(
     output reg                 en_alu,
     output reg                 en_selMem,
     output reg [1:0]           dest_control,
-    output reg [1:0]           op_sel
+    output reg [1:0]           op_sel,
+    output reg                 oprnd2_sel
 
 );
 
@@ -89,6 +90,15 @@ module CU #(
                 en_writeMem=1;
                 en_alu = 0;
                 op_sel = 2'b00 ;
+            end
+
+            //move operand1 to funct (mux 2 to 1 before alu)
+            4'b1000 : begin //operand2
+                oprnd2_sel = 0;
+            end
+            
+            4'b1001 : begin //oprnd2=0
+                oprnd2_sel = 1;
             end
 
             // NOP
