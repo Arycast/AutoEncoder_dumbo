@@ -15,7 +15,6 @@ module CU #(
     output reg [1:0]           dest_control,
     output reg [1:0]           op_sel,
     output reg                 oprnd2_sel
-
 );
 
     always @(*) begin
@@ -28,7 +27,7 @@ module CU #(
                 en_writeMem = 1;
                 en_selMem = 0;
                 dest_control = 2'b00;
-
+                oprnd2_sel = 0;
             end
             4'b0001 : begin //Substraction
                 en_alu = 1;
@@ -37,6 +36,7 @@ module CU #(
                 en_writeMem = 1;
                 en_selMem = 0;
                 dest_control = 2'b00;
+                oprnd2_sel = 0;
             end
             4'b0010 : begin //Multiplication
                 en_alu = 1;
@@ -45,6 +45,7 @@ module CU #(
                 en_writeMem = 1;
                 en_selMem = 0;
                 dest_control = 2'b00;
+                oprnd2_sel = 0;
             end
             // Mem control
             4'b0011 : begin 
@@ -54,6 +55,7 @@ module CU #(
                 en_alu = 0;
                 op_sel = 2'b00 ;
                 dest_control = 2'b00;
+                oprnd2_sel = 0;
             end
             4'b0100 : begin 
                 en_selMem = 1;
@@ -62,6 +64,7 @@ module CU #(
                 en_alu = 0;
                 op_sel = 2'b00 ;
                 dest_control = 2'b00;
+                oprnd2_sel = 0;
             end
 
             //funct destination
@@ -72,6 +75,8 @@ module CU #(
                 en_writeMem=1;
                 en_alu = 0;
                 op_sel = 2'b00 ;
+                oprnd2_sel = 1;
+                
             end
             
             4'b0110 : begin //relu
@@ -81,6 +86,7 @@ module CU #(
                 en_writeMem=1;
                 en_alu = 0;
                 op_sel = 2'b00 ;
+                oprnd2_sel = 1;
             end
 
             4'b0111 : begin //lut sigmoid def
@@ -90,14 +96,6 @@ module CU #(
                 en_writeMem=1;
                 en_alu = 0;
                 op_sel = 2'b00 ;
-            end
-
-            //move operand1 to funct (mux 2 to 1 before alu)
-            4'b1000 : begin //operand2
-                oprnd2_sel = 0;
-            end
-            
-            4'b1001 : begin //oprnd2=0
                 oprnd2_sel = 1;
             end
 
