@@ -15,6 +15,6 @@ module mult (
 wire [31:0]temp;
 assign temp = Operand_1[15:0]*Operand_2[15:0];
 assign result[15] = Operand_1[15]^Operand_2[15];
-assign result= temp[23:8];
+assign result[14:0] = temp[23:8];
 
 endmodule
