@@ -8,7 +8,7 @@
 module Instrcut_mem #(
    parameter ADDR_WIDTH = 4,
    parameter DATA_WIDTH = 16,
-   parameter DEPTH      = 32
+   parameter DEPTH      = 512
 ) (
    input wire                    clk,
    input wire  [15:0]           counter,

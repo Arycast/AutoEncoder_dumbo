@@ -84,17 +84,17 @@ module CU #(
 
                 en_selMem = 0;
                 en_writeMem=1;
-                en_alu = 0;
+                en_alu = 1;
                 op_sel = 2'b00 ;
                 oprnd2_sel = 1;
             end
 
-            4'b0111 : begin //lut sigmoid def
+            4'b0111 : begin //lut sigmoid diff
                 dest_control = 2'b11;
 
                 en_selMem = 0;
                 en_writeMem=1;
-                en_alu = 0;
+                en_alu = 1;
                 op_sel = 2'b00 ;
                 oprnd2_sel = 1;
             end
