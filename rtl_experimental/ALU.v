@@ -20,7 +20,6 @@ module ALU (
 
 wire [15:0]output_adder;
 wire [15:0]output_mult;
-wire [15:0]output_sub;
 wire [15:0] input_sub;
 wire [15:0] input_adder;
 wire [15:0] final_result;
