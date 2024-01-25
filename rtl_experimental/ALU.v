@@ -40,32 +40,32 @@ if (enable_ALU == 1) begin
     case(op_select)
 
     2'b00 : begin //adder case
-    assign selector_adder = 1'b0;
-    assign selector_mult = 1'b0;
-    assign op_mode_adder = 1'b0;    
-    assign result = final_result;
+     selector_adder = 1'b0;
+     selector_mult = 1'b0;
+     op_mode_adder = 1'b0;    
+     result = final_result;
     end
 
     2'b01 : begin //subtraction case
-    assign selector_adder = 1'b1;
-    assign selector_mult = 1'b0;  
-    assign op_mode_adder = 1'b1;    
+     selector_adder = 1'b1;
+     selector_mult = 1'b0;  
+     op_mode_adder = 1'b1;    
   
-    assign result = final_result;
+     result = final_result;
 
     end
 
     2'b10 : begin //mult case
-    assign selector_adder = 1'b0;
-    assign selector_mult = 1'b1;    
-    assign result = final_result;
+     selector_adder = 1'b0;
+     selector_mult = 1'b1;    
+     result = final_result;
 
     end
 
     endcase
 end
 else begin
-    assign result = 16'b0000000000000000;
+     result = 16'b0000000000000000;
 end
 
 
