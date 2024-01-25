@@ -20,7 +20,7 @@
 0566
 0677
 0788
-08A9 //hasil
+08A9 //hasil ditambah bias
 
 //encoded 2
 4F45 //w*x
@@ -121,4 +121,281 @@
 1888
 
 //differential error output
+422A
+2000
+2111
+2222
+2333
+2444
+2555
+2666
+2777
+2888
+42AA
+1000
+1111
+1222
+1333
+1444
+1555
+1666
+1777
+1888
 
+//differential weight output
+//output 1
+403B
+20B0
+21B1
+22B2
+23B3
+24B4
+25B5
+26B6
+27B7
+28B8
+
+//output 2
+405C
+20B0
+21B1
+22B2
+23B3
+24B4
+25B5
+26B6
+27B7
+28B8
+
+//differential Bias output
+// sama aja kaya error output
+
+// error middle layer 1
+406D
+2000
+2111
+2222
+2333
+2444
+2555
+2666
+2777
+2888
+
+4DAD
+2000
+2111
+2222
+2333
+2444
+2555
+2666
+2777
+2888
+
+4DDD
+0011
+0122
+0233
+0344
+0455
+0566
+0677
+0788
+
+//error middle layer 2
+407D
+2000
+2111
+2222
+2333
+2444
+2555
+2666
+2777
+2889
+
+4DAD
+2000
+2111
+2222
+2333
+2444
+2555
+2666
+2777
+2989
+
+4DDD
+0011
+0122
+0233
+0344
+0455
+0566
+0677
+0799
+
+//diff weight input 1
+4DFA
+2800
+2811
+2822
+2833
+2844
+2855
+2866
+2877
+2888
+
+//diff weight input 2
+4DF9
+2900
+2911
+2922
+2933
+2944
+2955
+2966
+2977
+2988
+
+//differential bias input 1 & 2
+//sama aja kaya error middle layer
+
+//upadated weight output 1
+//balikin ke weight output 1
+40BE
+2900
+2911
+2922
+2933
+2944
+2955
+2966
+2977
+2988
+
+46E6
+1000
+1111
+1222
+1333
+1444
+1555
+1666
+1777
+1888
+
+//upadated weight output 2
+//balikin ke weight output 2
+40CE
+2900
+2911
+2922
+2933
+2944
+2955
+2966
+2977
+2988
+
+47E7
+1000
+1111
+1222
+1333
+1444
+1555
+1666
+1777
+1888
+
+//upadated weight input 1
+//balikin ke weight input 1
+40AE
+2900
+2911
+2922
+2933
+2944
+2955
+2966
+2977
+2988
+
+42E2
+1000
+1111
+1222
+1333
+1444
+1555
+1666
+1777
+1888
+
+//upadated weight input 2
+//balikin ke weight input 2
+409E
+2900
+2911
+2922
+2933
+2944
+2955
+2966
+2977
+2988
+
+44E4
+1000
+1111
+1222
+1333
+1444
+1555
+1666
+1777
+1888
+
+//updated bias output
+//balikin ke bias output
+400E
+2900
+2911
+2922
+2933
+2944
+2955
+2966
+2977
+2988
+
+48E8
+1000
+1111
+1222
+1333
+1444
+1555
+1666
+1777
+1888
+
+//updated bias input 1
+//balikin ke bias input 1
+40DE
+2980
+
+43E3
+1A0A
+
+//updated bias input 2
+//balikin ke bias input 2
+
+40DE
+2990
+
+45E5
+1A0A
