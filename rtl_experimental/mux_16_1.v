@@ -33,6 +33,7 @@ case (select)
     4'b0001 : out = input_2;
     4'b0010 : out = input_3;
     4'b0011 : out = input_4;
+    4'b0100 : out = input_5;
     4'b0101 : out = input_6;
     4'b0110 : out = input_7;
     4'b0111 : out = input_8;
