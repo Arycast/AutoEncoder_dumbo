@@ -16,8 +16,8 @@ module mem #(
    input wire [DATA_WIDTH-1:0]   write_data,
    input wire [ADDR_WIDTH-1:0]   read_addr_1,
    input wire [ADDR_WIDTH-1:0]   read_addr_2,
-   output reg  [DATA_WIDTH-1:0]  read_data_1,
-   output reg  [DATA_WIDTH-1:0]  read_data_2
+   output wire  [DATA_WIDTH-1:0]  read_data_1,
+   output wire  [DATA_WIDTH-1:0]  read_data_2
 
 );
 
@@ -39,21 +39,28 @@ end
     * Synchronous Logic
     ***************************************************************************/
 
-   always @(negedge clk) begin
+   /*always @(negedge clk) begin
 
        read_data_1 <= mem_array[read_addr_1];
        read_data_2 <= mem_array[read_addr_2];
 
 
    end
+*/
+       assign read_data_1 = mem_array[read_addr_1];
+       assign read_data_2 = mem_array[read_addr_2];
 
-
-   always @(posedge clk) begin
-
+   always @(negedge clk) begin
+      
       if (write_en == 1'b1) begin
          mem_array[write_addr] <= write_data;
+
       end
 
+
    end
+
+
+
 
 endmodule
