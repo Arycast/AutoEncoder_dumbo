@@ -73,7 +73,7 @@ module CU #(
 
                 en_selMem = 0;
                 en_writeMem=1;
-                en_alu = 0;
+                en_alu = 1;
                 op_sel = 2'b00 ;
                 oprnd2_sel = 1;
                 
