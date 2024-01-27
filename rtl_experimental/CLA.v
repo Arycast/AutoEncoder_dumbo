@@ -25,7 +25,7 @@ four_bit_adder Adder_3 (ADD_1[15:12],ADD_2[15:12],sum_temp[15:12],Gen[3],Ci[2],C
 wire C_out;
 assign C_out = Ci[3];
 assign S[14:0] = sum_temp[14:0];
-assign S[15] = sum_temp[15]^C_out;
+assign S[15] = (sum_temp[15]^C_out)&(~ADD_2);
 
 
 endmodule
