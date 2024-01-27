@@ -5,6 +5,7 @@ module four_bit_adder (
   output G, //generate
   input C,            // Carry In
   output C_OUT, // Carry out
+  output C_OUT_temp, // for handling special cases
   output P //propagate
 
 );
@@ -25,6 +26,8 @@ assign S = Prop^Ci;
 
 assign P = Prop[3] & Prop[2] & Prop[1] & Prop[0];
 assign G = Gen[3] | (Gen[2] & Prop[3]) | (Gen[1] & Prop[2] & Prop[3]) | (Gen[0] & Prop[1] & Prop[2]);
+
+assign C_OUT_temp = Ci[3];
 
 endmodule
 
