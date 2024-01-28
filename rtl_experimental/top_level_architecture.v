@@ -19,8 +19,8 @@
 `include "mux_2_1.v"
 
 module top_level_architecture(
-input clock
-
+input clock,
+output wire [15:0] output_architecture
 );
 
 //internal signal
@@ -46,6 +46,7 @@ wire enable_sel_mem;
 wire [15:0] counter;
 wire [15:0] counter_input;
 wire operand2_sel;
+wire enable_out;
 
 //declaring module
 ALU ALU_0 (mem_to_ALU_operand_1,operand2_ALU,enable_ALU,op_select,ALU_result);
@@ -61,7 +62,8 @@ sel_mem selector_read_1(clock,enable_sel_mem,instruction[11:8],sector_selector_r
 sel_mem selector_read_2(clock,enable_sel_mem,instruction[7:4],sector_selector_read_2);
 sel_mem selector_write(clock,enable_sel_mem,instruction[3:0],sector_selector_write);
 top_level_memory mem_0 (mux_to_mem,sector_selector_write,instruction[3:0],clock,write_enable_mem,instruction[11:8],instruction[7:4],sector_selector_read_1,sector_selector_read_2,mem_to_ALU_operand_1,mem_to_operand2);
-CU CU_0 (instruction[15:12],write_enable_mem,enable_ALU,enable_sel_mem,dest_control,op_select,operand2_sel);
+CU CU_0 (instruction[15:12],write_enable_mem,enable_ALU,enable_sel_mem,dest_control,op_select,operand2_sel,enable_out);
 Instrcut_mem instruction_0 (clock,counter,instruction); 
+mem mem_IO (clock,enable_out,instruction[3:0],mux_to_mem,instruction[7:4],instruction[7:4],output_architecture,output_architecture);
 
 endmodule
