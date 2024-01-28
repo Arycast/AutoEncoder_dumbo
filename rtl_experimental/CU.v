@@ -14,7 +14,8 @@ module CU #(
     output reg                 en_selMem,
     output reg [1:0]           dest_control,
     output reg [1:0]           op_sel,
-    output reg                 oprnd2_sel
+    output reg                 oprnd2_sel,
+    output reg                 en_out
 );
 
     always @(*) begin
@@ -28,6 +29,7 @@ module CU #(
                 en_selMem = 0;
                 dest_control = 2'b00;
                 oprnd2_sel = 0;
+                en_out = 0;
             end
             4'b0001 : begin //Substraction
                 en_alu = 1;
@@ -37,6 +39,7 @@ module CU #(
                 en_selMem = 0;
                 dest_control = 2'b00;
                 oprnd2_sel = 0;
+                en_out = 0;
             end
             4'b0010 : begin //Multiplication
                 en_alu = 1;
@@ -46,6 +49,7 @@ module CU #(
                 en_selMem = 0;
                 dest_control = 2'b00;
                 oprnd2_sel = 0;
+                en_out = 0;
             end
             // Mem control
             4'b0011 : begin 
@@ -56,6 +60,7 @@ module CU #(
                 op_sel = 2'b00 ;
                 dest_control = 2'b00;
                 oprnd2_sel = 0;
+                en_out = 0;
             end
             4'b0100 : begin 
                 en_selMem = 1;
@@ -65,6 +70,7 @@ module CU #(
                 op_sel = 2'b00 ;
                 dest_control = 2'b00;
                 oprnd2_sel = 0;
+                en_out = 0;
             end
 
             //funct destination
@@ -76,6 +82,7 @@ module CU #(
                 en_alu = 1;
                 op_sel = 2'b00 ;
                 oprnd2_sel = 1;
+                en_out = 0;
                 
             end
             
@@ -87,6 +94,7 @@ module CU #(
                 en_alu = 1;
                 op_sel = 2'b00 ;
                 oprnd2_sel = 1;
+                en_out = 0;
             end
 
             4'b0111 : begin //lut sigmoid diff
@@ -97,6 +105,19 @@ module CU #(
                 en_alu = 1;
                 op_sel = 2'b00 ;
                 oprnd2_sel = 1;
+                en_out = 0;
+            end
+
+            4'b1000 : begin //giving output
+                en_out = 1;
+
+                dest_control = 2'b00;
+                en_selMem = 0;
+                en_writeMem=0;
+                en_alu = 1;
+                op_sel = 2'b00 ;
+                oprnd2_sel = 1;
+                
             end
 
             // NOP

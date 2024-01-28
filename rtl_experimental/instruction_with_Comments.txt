@@ -106,6 +106,16 @@
 5666
 5777
 5888
+// output
+8000
+8111
+8222
+8333
+8444
+8555
+8666
+8777
+8888
 
 //backward_Propagation
 //error output
