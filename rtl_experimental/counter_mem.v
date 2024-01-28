@@ -18,8 +18,10 @@ initial data_out = 16'd0;
    always @ (posedge clk) begin
    
 	if (training_count != 16'd10000) begin
-		if (data_in == 16'd332)
+		if (data_in == 16'd332) begin
 			data_out <= 16'd0;
+         training_count = training_count+16'd1;
+      end
 		else
             data_out <= data_in;
 			
