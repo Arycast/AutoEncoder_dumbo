@@ -3599,9 +3599,7 @@ module sigmoid_diff_lut (
          1789     :	result = 16'd0;
          1790     :	result = 16'd0;
          1791     :	result = 16'd0;
-
-
-
+         default  :  result = 16'd0;
       endcase
    end
 
