@@ -19,14 +19,14 @@ Sytem Level Block
 - ✅ Memory Cells
 - ✅ Memory Selector
 - ✅ ALU
--  CU
--  Instruction Memory
+- ✅ CU
+- ✅ Instruction Memory
 
 Top Level Block
--  Backward Propagation 
--  Forward Propagation
--  Top Level
+- ✅ Backward Propagation 
+- ✅ Forward Propagation
+- ✅ Top Level
 
 Misc
--  Instruction lists for Autoencoder
--  System architecture drawing
+- ✅ Instruction lists for Autoencoder
+- ✅ System architecture drawing
