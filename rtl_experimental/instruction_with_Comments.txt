@@ -151,6 +151,17 @@
 1666
 1777
 1888
+//luar biasa
+410A
+7000
+7111
+7222
+7333
+7444
+7555
+7666
+7777
+7888
 
 //differential weight output
 //output 1
