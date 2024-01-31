@@ -16,13 +16,13 @@ module mux_4_1 (
 );
 
  always @(*) begin
-case (select)
-    2'b00 : out = input_1;
-    2'b01 : out = input_2;
-    2'b10 : out = input_3;
-    2'b11 : out = input_4;
+	case (select)
+		2'b00 : out = input_1;
+		2'b01 : out = input_2;
+		2'b10 : out = input_3;
+		2'b11 : out = input_4;
 
-endcase
+	endcase
 end
 
 endmodule

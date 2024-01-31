@@ -20,5 +20,4 @@ assign temp_op2 = {{16{Operand_2[15]}}, Operand_2};
 
 assign temp = temp_op1 * temp_op2;
 assign result[15:0] = temp[24:8];
-
 endmodule

@@ -5,11 +5,6 @@
 // Project Name: Autoencoder
 //////////////////////////////////////////////////////////////////////////////////
 
-`include "mem.v"
-`include "mux_16_1.v"
-`include "demux_1_16.v"
-`include "rom.v"
-
 module top_level_memory (
     
    input [15:0] data_write, 
@@ -49,5 +44,4 @@ generate
     );
 end 
 endgenerate
-
 endmodule

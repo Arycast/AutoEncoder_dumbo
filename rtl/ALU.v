@@ -4,10 +4,6 @@
 // Module Name : ALU
 // Project Name: Autoencoder
 //////////////////////////////////////////////////////////////////////////////////
-`include "CLA.v"
-`include "mult.v"
-`include "mux_2_1.v"
-
 
 module ALU (
 
@@ -35,42 +31,31 @@ mux_2_1 mux_0 (Operand_2,input_sub,selector_adder,input_adder); // handling adde
 mux_2_1 mux_1 (output_adder,output_mult,selector_mult,final_result); // handling multiplication 
 
  always @(*) begin
-if (enable_ALU == 1) begin
-    case(op_select)
+	if (enable_ALU == 1) begin
+		case(op_select)
+		2'b00 : begin //adder case
+		selector_adder = 1'b0;
+		selector_mult = 1'b0;
+		op_mode_adder = 1'b0;    
+		result = final_result;
+		end
 
-    2'b00 : begin //adder case
-     selector_adder = 1'b0;
-     selector_mult = 1'b0;
-     op_mode_adder = 1'b0;    
-     result = final_result;
-    end
+		2'b01 : begin //subtraction case
+		selector_adder = 1'b1;
+		selector_mult = 1'b0;  
+		op_mode_adder = 1'b1;    
+		result = final_result;
+		end
 
-    2'b01 : begin //subtraction case
-     selector_adder = 1'b1;
-     selector_mult = 1'b0;  
-     op_mode_adder = 1'b1;    
-  
-     result = final_result;
-
-    end
-
-    2'b10 : begin //mult case
-     selector_adder = 1'b0;
-     selector_mult = 1'b1;    
-     result = final_result;
-
-    end
-
-    endcase
-end
-else begin
-     result = 16'b0000000000000000;
-end
-
-
- end
-
-
-
-
+		2'b10 : begin //mult case
+		selector_adder = 1'b0;
+		selector_mult = 1'b1;    
+		result = final_result;
+		end
+		endcase
+	end
+	else begin
+		result = 16'b0000000000000000;
+	end
+	end
 endmodule

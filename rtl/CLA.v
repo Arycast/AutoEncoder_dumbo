@@ -4,7 +4,7 @@
 // Module Name : CLA
 // Project Name: Autoencoder
 //////////////////////////////////////////////////////////////////////////////////
-`include "four_bit_adder.v"
+
 module CLA (
   input [15:0] ADD_1,  // Operand 1
   input [15:0] ADD_2,  // Operand 2
@@ -29,9 +29,4 @@ assign C_out = Ci[3];
 assign overflow = C_out^C_OUT_temp[3];
 assign S[14:0] = sum_temp[14:0];
 assign S[15] = overflow|sum_temp[15];
-
-
-
-
-
 endmodule

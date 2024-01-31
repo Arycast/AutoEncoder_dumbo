@@ -1,22 +1,23 @@
 //////////////////////////////////////////////////////////////////////////////////
 // Engineer    : Achmad novel, Fauzan Ibrahim, Nicholas Teffandi
 // Design Name : Autoencoder
-// Module Name : Memory Selector
+// Module Name : mux_2_1
 // Project Name: Autoencoder
 //////////////////////////////////////////////////////////////////////////////////
 
-module sel_mem (
-   input wire        clk,
-   input wire        en,
-   input wire [3:0]  data_in,
-   output reg [3:0]  data_out
+module mux_2_1 (
+    
+   input [15:0] input_1, 
+   input [15:0] input_2,
+   input  select,
+   output reg [15:0] out
 );
 
-initial data_out = 4'd0;
+ always @(*) begin
+	case (select)
+		1'b0 : out = input_1;
+		1'b1 : out = input_2;
+	endcase
+end
 
-   always @ (posedge clk) begin
-      if (en)
-         data_out <= data_in;
-   end
-   
 endmodule
